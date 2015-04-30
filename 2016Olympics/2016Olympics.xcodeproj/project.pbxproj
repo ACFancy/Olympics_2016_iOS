@@ -14,7 +14,7 @@
 		3D3D43241AF0BB3500A2ED01 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D3D43231AF0BB3500A2ED01 /* Images.xcassets */; };
 		3D3D43271AF0BB3500A2ED01 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D3D43251AF0BB3500A2ED01 /* LaunchScreen.xib */; };
 		3D3D43331AF0BB3500A2ED01 /* _016OlympicsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D3D43321AF0BB3500A2ED01 /* _016OlympicsTests.m */; };
-		3D3D433D1AF0BB4100A2ED01 /* libBusinessLogicLayer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D3D433C1AF0BB4100A2ED01 /* libBusinessLogicLayer.a */; };
+		3D504F2E1AF1C62500EF8988 /* libBusinessLogicLayer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D504F2D1AF1C62500EF8988 /* libBusinessLogicLayer.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,7 +41,7 @@
 		3D3D432C1AF0BB3500A2ED01 /* 2016OlympicsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 2016OlympicsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D3D43311AF0BB3500A2ED01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3D3D43321AF0BB3500A2ED01 /* _016OlympicsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _016OlympicsTests.m; sourceTree = "<group>"; };
-		3D3D433C1AF0BB4100A2ED01 /* libBusinessLogicLayer.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libBusinessLogicLayer.a; path = "../BusinessLogicLayer/build/Debug-iphoneos/libBusinessLogicLayer.a"; sourceTree = "<group>"; };
+		3D504F2D1AF1C62500EF8988 /* libBusinessLogicLayer.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libBusinessLogicLayer.a; path = "../BusinessLogicLayer/build/Debug-iphoneos/libBusinessLogicLayer.a"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,7 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D3D433D1AF0BB4100A2ED01 /* libBusinessLogicLayer.a in Frameworks */,
+				3D504F2E1AF1C62500EF8988 /* libBusinessLogicLayer.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,7 +66,7 @@
 		3D3D430A1AF0BB3500A2ED01 = {
 			isa = PBXGroup;
 			children = (
-				3D3D433C1AF0BB4100A2ED01 /* libBusinessLogicLayer.a */,
+				3D504F2D1AF1C62500EF8988 /* libBusinessLogicLayer.a */,
 				3D3D43151AF0BB3500A2ED01 /* 2016Olympics */,
 				3D3D432F1AF0BB3500A2ED01 /* 2016OlympicsTests */,
 				3D3D43141AF0BB3500A2ED01 /* Products */,
@@ -355,7 +355,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = 2016Olympics/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)/**";
+				LIBRARY_SEARCH_PATHS = (
+					"$(BUILT_PRODUCTS_DIR)/**",
+					"/Users/ianc/CodeRes/PersistenceLayer/build/Debug-iphoneos",
+					"/Users/ianc/CodeRes/BusinessLogicLayer/build/Debug-iphoneos",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -366,7 +370,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = 2016Olympics/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)/**";
+				LIBRARY_SEARCH_PATHS = (
+					"$(BUILT_PRODUCTS_DIR)/**",
+					"/Users/ianc/CodeRes/PersistenceLayer/build/Debug-iphoneos",
+					"/Users/ianc/CodeRes/BusinessLogicLayer/build/Debug-iphoneos",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -424,6 +432,7 @@
 				3D3D43381AF0BB3500A2ED01 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3D3D43391AF0BB3500A2ED01 /* Build configuration list for PBXNativeTarget "2016OlympicsTests" */ = {
 			isa = XCConfigurationList;
@@ -432,6 +441,7 @@
 				3D3D433B1AF0BB3500A2ED01 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

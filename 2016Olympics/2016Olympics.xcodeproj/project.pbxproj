@@ -15,6 +15,8 @@
 		3D3D43271AF0BB3500A2ED01 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D3D43251AF0BB3500A2ED01 /* LaunchScreen.xib */; };
 		3D3D43331AF0BB3500A2ED01 /* _016OlympicsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D3D43321AF0BB3500A2ED01 /* _016OlympicsTests.m */; };
 		3D504F2E1AF1C62500EF8988 /* libBusinessLogicLayer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D504F2D1AF1C62500EF8988 /* libBusinessLogicLayer.a */; };
+		3D504F3B1AF22CDC00EF8988 /* create_load.sql in Resources */ = {isa = PBXBuildFile; fileRef = 3D504F391AF22CDC00EF8988 /* create_load.sql */; };
+		3D504F3C1AF22CDC00EF8988 /* DBConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3D504F3A1AF22CDC00EF8988 /* DBConfig.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +44,8 @@
 		3D3D43311AF0BB3500A2ED01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3D3D43321AF0BB3500A2ED01 /* _016OlympicsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _016OlympicsTests.m; sourceTree = "<group>"; };
 		3D504F2D1AF1C62500EF8988 /* libBusinessLogicLayer.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libBusinessLogicLayer.a; path = "../BusinessLogicLayer/build/Debug-iphoneos/libBusinessLogicLayer.a"; sourceTree = "<group>"; };
+		3D504F391AF22CDC00EF8988 /* create_load.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = create_load.sql; sourceTree = "<group>"; };
+		3D504F3A1AF22CDC00EF8988 /* DBConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DBConfig.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +72,7 @@
 			children = (
 				3D504F2D1AF1C62500EF8988 /* libBusinessLogicLayer.a */,
 				3D3D43151AF0BB3500A2ED01 /* 2016Olympics */,
+				3D504F381AF22CDC00EF8988 /* DBFile */,
 				3D3D432F1AF0BB3500A2ED01 /* 2016OlympicsTests */,
 				3D3D43141AF0BB3500A2ED01 /* Products */,
 			);
@@ -121,6 +126,15 @@
 				3D3D43311AF0BB3500A2ED01 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3D504F381AF22CDC00EF8988 /* DBFile */ = {
+			isa = PBXGroup;
+			children = (
+				3D504F391AF22CDC00EF8988 /* create_load.sql */,
+				3D504F3A1AF22CDC00EF8988 /* DBConfig.plist */,
+			);
+			path = DBFile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -203,6 +217,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D504F3C1AF22CDC00EF8988 /* DBConfig.plist in Resources */,
+				3D504F3B1AF22CDC00EF8988 /* create_load.sql in Resources */,
 				3D3D43221AF0BB3500A2ED01 /* Main.storyboard in Resources */,
 				3D3D43271AF0BB3500A2ED01 /* LaunchScreen.xib in Resources */,
 				3D3D43241AF0BB3500A2ED01 /* Images.xcassets in Resources */,

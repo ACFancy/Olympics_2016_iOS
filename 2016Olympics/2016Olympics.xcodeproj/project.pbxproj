@@ -17,6 +17,8 @@
 		3D504F2E1AF1C62500EF8988 /* libBusinessLogicLayer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D504F2D1AF1C62500EF8988 /* libBusinessLogicLayer.a */; };
 		3D504F3B1AF22CDC00EF8988 /* create_load.sql in Resources */ = {isa = PBXBuildFile; fileRef = 3D504F391AF22CDC00EF8988 /* create_load.sql */; };
 		3D504F3C1AF22CDC00EF8988 /* DBConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3D504F3A1AF22CDC00EF8988 /* DBConfig.plist */; };
+		3D6CB0FA1AF7224000626E56 /* create_load.sql in Resources */ = {isa = PBXBuildFile; fileRef = 3D504F391AF22CDC00EF8988 /* create_load.sql */; };
+		3D6CB0FB1AF7224200626E56 /* DBConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3D504F3A1AF22CDC00EF8988 /* DBConfig.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -229,6 +231,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D6CB0FB1AF7224200626E56 /* DBConfig.plist in Resources */,
+				3D6CB0FA1AF7224000626E56 /* create_load.sql in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

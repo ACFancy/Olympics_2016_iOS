@@ -11,6 +11,12 @@
 		3D504F311AF2288E00EF8988 /* Events.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D504F301AF2288E00EF8988 /* Events.m */; };
 		3D504F341AF22A2C00EF8988 /* Schedule.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D504F331AF22A2C00EF8988 /* Schedule.m */; };
 		3D504F371AF22B3D00EF8988 /* EventsDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D504F361AF22B3D00EF8988 /* EventsDAO.m */; };
+		3D6CB0FC1AF7225E00626E56 /* EventsDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D504F361AF22B3D00EF8988 /* EventsDAO.m */; };
+		3D6CB0FD1AF7226100626E56 /* Schedule.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D504F331AF22A2C00EF8988 /* Schedule.m */; };
+		3D6CB0FE1AF7226300626E56 /* Events.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D504F301AF2288E00EF8988 /* Events.m */; };
+		3D6CB1011AF722C100626E56 /* EventsDAOTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D6CB1001AF722C100626E56 /* EventsDAOTests.m */; };
+		3D7CAB551AF8506C0020C243 /* BaseDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D7CAB541AF8506C0020C243 /* BaseDAO.m */; };
+		3DA009241AF740500033E00D /* DBHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DA009231AF740500033E00D /* DBHelper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +51,15 @@
 		3D504F331AF22A2C00EF8988 /* Schedule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Schedule.m; sourceTree = "<group>"; };
 		3D504F351AF22B3D00EF8988 /* EventsDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventsDAO.h; sourceTree = "<group>"; };
 		3D504F361AF22B3D00EF8988 /* EventsDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventsDAO.m; sourceTree = "<group>"; };
+		3D6CB0FF1AF722C100626E56 /* EventsDAOTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventsDAOTests.h; sourceTree = "<group>"; };
+		3D6CB1001AF722C100626E56 /* EventsDAOTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventsDAOTests.m; sourceTree = "<group>"; };
+		3D7CAB531AF8506C0020C243 /* BaseDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseDAO.h; sourceTree = "<group>"; };
+		3D7CAB541AF8506C0020C243 /* BaseDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseDAO.m; sourceTree = "<group>"; };
+		3DA009221AF740500033E00D /* DBHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBHelper.h; sourceTree = "<group>"; };
+		3DA009231AF740500033E00D /* DBHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBHelper.m; sourceTree = "<group>"; };
+		3DA009261AF742870033E00D /* create_load.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = create_load.sql; sourceTree = "<group>"; };
+		3DA009271AF742870033E00D /* DBConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DBConfig.plist; sourceTree = "<group>"; };
+		3DA009291AF7443E0033E00D /* PersistenceLayer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PersistenceLayer-Prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +84,7 @@
 		3D3D42C01AF0B53300A2ED01 = {
 			isa = PBXGroup;
 			children = (
+				3DA009251AF742870033E00D /* DBFile */,
 				3D3D42CB1AF0B53300A2ED01 /* PersistenceLayer */,
 				3D3D42D81AF0B53300A2ED01 /* PersistenceLayerTests */,
 				3D3D42CA1AF0B53300A2ED01 /* Products */,
@@ -91,8 +107,13 @@
 				3D504F301AF2288E00EF8988 /* Events.m */,
 				3D504F321AF22A2C00EF8988 /* Schedule.h */,
 				3D504F331AF22A2C00EF8988 /* Schedule.m */,
+				3D7CAB531AF8506C0020C243 /* BaseDAO.h */,
+				3D7CAB541AF8506C0020C243 /* BaseDAO.m */,
 				3D504F351AF22B3D00EF8988 /* EventsDAO.h */,
 				3D504F361AF22B3D00EF8988 /* EventsDAO.m */,
+				3DA009221AF740500033E00D /* DBHelper.h */,
+				3DA009231AF740500033E00D /* DBHelper.m */,
+				3DA009281AF743E70033E00D /* Supporting Files */,
 			);
 			path = PersistenceLayer;
 			sourceTree = "<group>";
@@ -101,6 +122,8 @@
 			isa = PBXGroup;
 			children = (
 				3D3D42D91AF0B53300A2ED01 /* Supporting Files */,
+				3D6CB0FF1AF722C100626E56 /* EventsDAOTests.h */,
+				3D6CB1001AF722C100626E56 /* EventsDAOTests.m */,
 			);
 			path = PersistenceLayerTests;
 			sourceTree = "<group>";
@@ -109,6 +132,23 @@
 			isa = PBXGroup;
 			children = (
 				3D3D42DA1AF0B53300A2ED01 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3DA009251AF742870033E00D /* DBFile */ = {
+			isa = PBXGroup;
+			children = (
+				3DA009261AF742870033E00D /* create_load.sql */,
+				3DA009271AF742870033E00D /* DBConfig.plist */,
+			);
+			path = DBFile;
+			sourceTree = "<group>";
+		};
+		3DA009281AF743E70033E00D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3DA009291AF7443E0033E00D /* PersistenceLayer-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -204,6 +244,8 @@
 				3D504F341AF22A2C00EF8988 /* Schedule.m in Sources */,
 				3D504F371AF22B3D00EF8988 /* EventsDAO.m in Sources */,
 				3D504F311AF2288E00EF8988 /* Events.m in Sources */,
+				3DA009241AF740500033E00D /* DBHelper.m in Sources */,
+				3D7CAB551AF8506C0020C243 /* BaseDAO.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,6 +253,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D6CB0FE1AF7226300626E56 /* Events.m in Sources */,
+				3D6CB0FD1AF7226100626E56 /* Schedule.m in Sources */,
+				3D6CB0FC1AF7225E00626E56 /* EventsDAO.m in Sources */,
+				3D6CB1011AF722C100626E56 /* EventsDAOTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,6 +352,8 @@
 		3D3D42DE1AF0B53300A2ED01 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/PersistenceLayer/PersistenceLayer-Prefix.pch";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/ianc/Desktop/关东升/BusinessLogicLayer/build/Debug-iphoneos",
@@ -319,6 +367,8 @@
 		3D3D42DF1AF0B53300A2ED01 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/PersistenceLayer/PersistenceLayer-Prefix.pch";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/ianc/Desktop/关东升/BusinessLogicLayer/build/Debug-iphoneos",

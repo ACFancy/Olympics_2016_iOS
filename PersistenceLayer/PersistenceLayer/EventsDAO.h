@@ -8,8 +8,9 @@
 
 #import <Foundation/Foundation.h>
 #import "Events.h"
+#import "BaseDAO.h"
 
-@interface EventsDAO : NSObject
+@interface EventsDAO : BaseDAO
 
 //插入数据的方法
 - (int)create:(Events *)model;
@@ -21,4 +22,6 @@
 - (NSMutableArray *)findAll;
 //按照主键查询数据的方法
 - (Events *)findById:(Events *)model;
+
++ (EventsDAO *)sharedManager;
 @end

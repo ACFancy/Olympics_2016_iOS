@@ -12,7 +12,7 @@
 
 - (void)setUp{
     //创建EventsDAO对象
-    self.dao = [EventsDAO shareManager];
+    self.dao = [EventsDAO sharedManager];
     //创建Events对象
     self.theEvents = [[Events alloc] init];
     self.theEvents.EventName = @"test EventName";
@@ -39,7 +39,7 @@
     Events *resEvents = [self.dao findById:self.theEvents];
     //断言 查询结果非nil
     XCTAssertEqualObjects(self.theEvents.EventName, resEvents.EventName,@"比赛项目名测试失败");
-    XCTAssertEqualObjects(self.theEvents.EventIcon, resEvents.EventIcon.@"比赛项目图标测试失败");
+    XCTAssertEqualObjects(self.theEvents.EventIcon, resEvents.EventIcon,@"比赛项目图标测试失败");
     XCTAssertEqualObjects(self.theEvents.KeyInfo, resEvents.KeyInfo,@"项目关键信息测试失败");
     XCTAssertEqualObjects(self.theEvents.BasicsInfo, resEvents.BasicsInfo,@"项目基本信息测试失败");
     XCTAssertEqualObjects(self.theEvents.OlympicInfo, resEvents.OlympicInfo,@"项目奥运会历史信息测试失败");

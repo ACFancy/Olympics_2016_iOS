@@ -9,6 +9,7 @@
 #import "BaseDAO.h"
 #import "Schedule.h"
 #import "Events.h"
+#import "sqlite3.h"
 
 //比赛日程表， 数据访问对象类
 @interface ScheduleDAO : BaseDAO

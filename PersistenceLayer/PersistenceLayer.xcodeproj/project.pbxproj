@@ -24,6 +24,8 @@
 		3D7CAB641AF877E90020C243 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D7CAB611AF8776A0020C243 /* Foundation.framework */; };
 		3D7CAB661AF878020020C243 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D7CAB651AF878020020C243 /* UIKit.framework */; };
 		3DA009241AF740500033E00D /* DBHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DA009231AF740500033E00D /* DBHelper.m */; };
+		3DC71AE21AFC3E21005A43CF /* create_load.sql in Resources */ = {isa = PBXBuildFile; fileRef = 3DA009261AF742870033E00D /* create_load.sql */; };
+		3DC71AE31AFC3E25005A43CF /* DBConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3DA009271AF742870033E00D /* DBConfig.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -257,6 +259,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DC71AE31AFC3E25005A43CF /* DBConfig.plist in Resources */,
+				3DC71AE21AFC3E21005A43CF /* create_load.sql in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -385,6 +389,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/ianc/Desktop/关东升/BusinessLogicLayer/build/Debug-iphoneos",
+					"$(PROJECT_DIR)",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -400,6 +405,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/ianc/Desktop/关东升/BusinessLogicLayer/build/Debug-iphoneos",
+					"$(PROJECT_DIR)",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";

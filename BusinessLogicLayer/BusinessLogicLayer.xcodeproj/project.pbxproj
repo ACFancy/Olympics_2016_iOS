@@ -7,37 +7,48 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D14938C1AF99FF0006E064F /* EventsBL.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DB803611AF8EFD5000208C9 /* EventsBL.m */; };
+		3D14938D1AF99FF3006E064F /* ScheduleBL.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DB803631AF8EFD5000208C9 /* ScheduleBL.m */; };
+		3D1493921AF9A20E006E064F /* EventsBL.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DB803601AF8EFD5000208C9 /* EventsBL.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3D1493931AF9A20E006E064F /* ScheduleBL.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DB803621AF8EFD5000208C9 /* ScheduleBL.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3D14939F1AF9AACB006E064F /* EventsBLTests.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D14939B1AF9AA29006E064F /* EventsBLTests.h */; };
+		3D1493A01AF9AACE006E064F /* EventsBLTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D14939C1AF9AA29006E064F /* EventsBLTests.m */; };
+		3D1493A11AF9AAF0006E064F /* EventsBL.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DB803601AF8EFD5000208C9 /* EventsBL.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3D1493A21AF9AAF0006E064F /* ScheduleBL.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DB803621AF8EFD5000208C9 /* ScheduleBL.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3D1493A41AF9AB66006E064F /* libPersistenceLayer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D1493A31AF9AB66006E064F /* libPersistenceLayer.a */; };
 		3D3D42F81AF0B9DB00A2ED01 /* libBusinessLogicLayer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D3D42EC1AF0B9DB00A2ED01 /* libBusinessLogicLayer.a */; };
-		3D3D43071AF0BA8700A2ED01 /* libPersistenceLayer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D3D43061AF0BA8700A2ED01 /* libPersistenceLayer.a */; };
+		3DB803641AF8EFD5000208C9 /* EventsBL.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DB803611AF8EFD5000208C9 /* EventsBL.m */; };
+		3DB803651AF8EFD5000208C9 /* ScheduleBL.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DB803631AF8EFD5000208C9 /* ScheduleBL.m */; };
+		3DC71AE61AFC4526005A43CF /* ScheduleBLTests.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DC71AE41AFC4526005A43CF /* ScheduleBLTests.h */; };
+		3DC71AE71AFC4526005A43CF /* ScheduleBLTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DC71AE51AFC4526005A43CF /* ScheduleBLTests.m */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		3D3D42F91AF0B9DB00A2ED01 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 3D3D42E41AF0B9DB00A2ED01 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 3D3D42EB1AF0B9DB00A2ED01;
-			remoteInfo = BusinessLogicLayer;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXCopyFilesBuildPhase section */
-		3D3D42EA1AF0B9DB00A2ED01 /* CopyFiles */ = {
+		3D3D42EA1AF0B9DB00A2ED01 /* Copy Files */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
 			);
+			name = "Copy Files";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3D14939B1AF9AA29006E064F /* EventsBLTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventsBLTests.h; sourceTree = "<group>"; };
+		3D14939C1AF9AA29006E064F /* EventsBLTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventsBLTests.m; sourceTree = "<group>"; };
+		3D1493A31AF9AB66006E064F /* libPersistenceLayer.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPersistenceLayer.a; path = "../PersistenceLayer/build/Debug-iphoneos/libPersistenceLayer.a"; sourceTree = "<group>"; };
 		3D3D42EC1AF0B9DB00A2ED01 /* libBusinessLogicLayer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libBusinessLogicLayer.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D3D42F71AF0B9DB00A2ED01 /* BusinessLogicLayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BusinessLogicLayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D3D42FD1AF0B9DB00A2ED01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3D3D43061AF0BA8700A2ED01 /* libPersistenceLayer.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPersistenceLayer.a; path = "../PersistenceLayer/build/Debug-iphoneos/libPersistenceLayer.a"; sourceTree = "<group>"; };
+		3DB803601AF8EFD5000208C9 /* EventsBL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventsBL.h; sourceTree = "<group>"; };
+		3DB803611AF8EFD5000208C9 /* EventsBL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventsBL.m; sourceTree = "<group>"; };
+		3DB803621AF8EFD5000208C9 /* ScheduleBL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScheduleBL.h; sourceTree = "<group>"; };
+		3DB803631AF8EFD5000208C9 /* ScheduleBL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScheduleBL.m; sourceTree = "<group>"; };
+		3DC71AE41AFC4526005A43CF /* ScheduleBLTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScheduleBLTests.h; sourceTree = "<group>"; };
+		3DC71AE51AFC4526005A43CF /* ScheduleBLTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScheduleBLTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,7 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D3D43071AF0BA8700A2ED01 /* libPersistenceLayer.a in Frameworks */,
+				3D1493A41AF9AB66006E064F /* libPersistenceLayer.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,7 +74,7 @@
 		3D3D42E31AF0B9DB00A2ED01 = {
 			isa = PBXGroup;
 			children = (
-				3D3D43061AF0BA8700A2ED01 /* libPersistenceLayer.a */,
+				3D1493A31AF9AB66006E064F /* libPersistenceLayer.a */,
 				3D3D42EE1AF0B9DB00A2ED01 /* BusinessLogicLayer */,
 				3D3D42FB1AF0B9DB00A2ED01 /* BusinessLogicLayerTests */,
 				3D3D42ED1AF0B9DB00A2ED01 /* Products */,
@@ -82,6 +93,10 @@
 		3D3D42EE1AF0B9DB00A2ED01 /* BusinessLogicLayer */ = {
 			isa = PBXGroup;
 			children = (
+				3DB803601AF8EFD5000208C9 /* EventsBL.h */,
+				3DB803611AF8EFD5000208C9 /* EventsBL.m */,
+				3DB803621AF8EFD5000208C9 /* ScheduleBL.h */,
+				3DB803631AF8EFD5000208C9 /* ScheduleBL.m */,
 			);
 			path = BusinessLogicLayer;
 			sourceTree = "<group>";
@@ -90,6 +105,10 @@
 			isa = PBXGroup;
 			children = (
 				3D3D42FC1AF0B9DB00A2ED01 /* Supporting Files */,
+				3D14939B1AF9AA29006E064F /* EventsBLTests.h */,
+				3D14939C1AF9AA29006E064F /* EventsBLTests.m */,
+				3DC71AE41AFC4526005A43CF /* ScheduleBLTests.h */,
+				3DC71AE51AFC4526005A43CF /* ScheduleBLTests.m */,
 			);
 			path = BusinessLogicLayerTests;
 			sourceTree = "<group>";
@@ -104,6 +123,29 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		3D1493911AF9A201006E064F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D14939F1AF9AACB006E064F /* EventsBLTests.h in Headers */,
+				3D1493921AF9A20E006E064F /* EventsBL.h in Headers */,
+				3D1493931AF9A20E006E064F /* ScheduleBL.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D14939A1AF9A8AE006E064F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D1493A11AF9AAF0006E064F /* EventsBL.h in Headers */,
+				3D1493A21AF9AAF0006E064F /* ScheduleBL.h in Headers */,
+				3DC71AE61AFC4526005A43CF /* ScheduleBLTests.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
 		3D3D42EB1AF0B9DB00A2ED01 /* BusinessLogicLayer */ = {
 			isa = PBXNativeTarget;
@@ -111,7 +153,8 @@
 			buildPhases = (
 				3D3D42E81AF0B9DB00A2ED01 /* Sources */,
 				3D3D42E91AF0B9DB00A2ED01 /* Frameworks */,
-				3D3D42EA1AF0B9DB00A2ED01 /* CopyFiles */,
+				3D3D42EA1AF0B9DB00A2ED01 /* Copy Files */,
+				3D1493911AF9A201006E064F /* Headers */,
 			);
 			buildRules = (
 			);
@@ -129,11 +172,11 @@
 				3D3D42F31AF0B9DB00A2ED01 /* Sources */,
 				3D3D42F41AF0B9DB00A2ED01 /* Frameworks */,
 				3D3D42F51AF0B9DB00A2ED01 /* Resources */,
+				3D14939A1AF9A8AE006E064F /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				3D3D42FA1AF0B9DB00A2ED01 /* PBXTargetDependency */,
 			);
 			name = BusinessLogicLayerTests;
 			productName = BusinessLogicLayerTests;
@@ -190,6 +233,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D1493A01AF9AACE006E064F /* EventsBLTests.m in Sources */,
+				3DB803651AF8EFD5000208C9 /* ScheduleBL.m in Sources */,
+				3DB803641AF8EFD5000208C9 /* EventsBL.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,18 +243,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D14938C1AF99FF0006E064F /* EventsBL.m in Sources */,
+				3D14938D1AF99FF3006E064F /* ScheduleBL.m in Sources */,
+				3DC71AE71AFC4526005A43CF /* ScheduleBLTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		3D3D42FA1AF0B9DB00A2ED01 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 3D3D42EB1AF0B9DB00A2ED01 /* BusinessLogicLayer */;
-			targetProxy = 3D3D42F91AF0B9DB00A2ED01 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		3D3D42FE1AF0B9DB00A2ED01 /* Debug */ = {
@@ -292,9 +333,13 @@
 		3D3D43011AF0B9DB00A2ED01 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/ianc/Desktop/关东升/PersistenceLayer/build/Debug-iphoneos",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/2016Olympics-dmculkqpatoytvcscwknnmwjhzfk/Build/Products/Debug-iphoneos",
+					"/Users/ianc/CodeRes/PersistenceLayer/build/Debug-iphoneos",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -306,9 +351,13 @@
 		3D3D43021AF0B9DB00A2ED01 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/ianc/Desktop/关东升/PersistenceLayer/build/Debug-iphoneos",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/2016Olympics-dmculkqpatoytvcscwknnmwjhzfk/Build/Products/Debug-iphoneos",
+					"/Users/ianc/CodeRes/PersistenceLayer/build/Debug-iphoneos",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -331,7 +380,12 @@
 				);
 				INFOPLIST_FILE = BusinessLogicLayerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)/**";
 			};
 			name = Debug;
 		};
@@ -345,7 +399,12 @@
 				);
 				INFOPLIST_FILE = BusinessLogicLayerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)/**";
 			};
 			name = Release;
 		};

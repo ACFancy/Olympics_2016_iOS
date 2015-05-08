@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "Events.h"
 #import "BaseDAO.h"
-
+#import "sqlite3.h"
 @interface EventsDAO : BaseDAO
 
 //插入数据的方法

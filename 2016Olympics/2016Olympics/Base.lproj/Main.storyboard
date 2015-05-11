@@ -85,7 +85,7 @@
                                 </view>
                                 <connections>
                                     <outlet property="imageView" destination="AL1-3Y-dyR" id="iMK-cB-A98"/>
-                                    <segue destination="UBj-eG-pJ5" kind="show" id="69t-6K-a8g"/>
+                                    <segue destination="UBj-eG-pJ5" kind="show" identifier="showDetail" id="69t-6K-a8g"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
@@ -111,9 +111,70 @@
                     <view key="view" contentMode="scaleToFill" id="IZO-PN-HzC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fjn-va-ihi">
+                                <rect key="frame" x="16" y="0.0" width="568" height="600"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="archery.gif" translatesAutoresizingMaskIntoConstraints="NO" id="7YS-27-HMz">
+                                        <rect key="frame" x="36" y="78" width="101" height="101"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Archery" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V7T-B8-O0z">
+                                        <rect key="frame" x="155" y="152" width="172" height="45"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JFo-a6-cF9">
+                                        <rect key="frame" x="28" y="196" width="250" height="200"/>
+                                        <mutableString key="text">The object of the sport is simple: to shoot arrows as close to the centre of a target as possible. Olympic Archery targets are 122 centimetres in diameter, with the gold ring at the centre (worth a maximum 10 points) measuring just 12.2cm. Archers shoot at the target from a distance of 70 metres. At the Olympic Games, the two individual Archery competitions (one for men, one for women) will be played in a knockout format. Matches will be played over the best of five sets, with each set consisting of three arrows per archer. The winners of each match will qualify for the next round, until the last two archers go head to head in the gold medal match. A knockout format will also be used for the men’s and women’s team competitions, which features teams of three archers competing against each other in a best-of-24-arrows format.</mutableString>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="The basics" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zsa-2c-vb3">
+                                        <rect key="frame" x="38" y="423" width="100" height="22"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kjM-C8-C1U">
+                                        <rect key="frame" x="30" y="444" width="237" height="200"/>
+                                        <mutableString key="text">Archery made its Olympic debut at Paris 1900, was dropped from the programme after the 1908 Games, and then returned for a single appearance in 1920. After a 52-year gap, the sport was reintroduced at Munich 1972 and has remained on the Olympic programme ever since. For London 2012, the Archery competition will connect the old with the new at Lord’s Cricket Ground. During the knockout phase, archers will shoot from in front of the 19th-century Pavilion across the hallowed cricket square towards the modern Media Centre.</mutableString>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n9M-AX-9K8">
+                                        <rect key="frame" x="32" y="695" width="250" height="130"/>
+                                        <string key="text">Archery dates back around 10,000 years, when bows and arrows were first used for hunting and warfare, before it developed as a competitive activity in medieval England. A tense and testing sport that requires immense reserves of skill and nerve, Archery is now practised in more than 140 countries around the world.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Olympic past and present" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s9T-Xq-4DM">
+                                        <rect key="frame" x="36" y="651" width="272" height="51"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </scrollView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="fjn-va-ihi" firstAttribute="trailing" secondItem="IZO-PN-HzC" secondAttribute="trailingMargin" id="8Dc-V6-PqW"/>
+                            <constraint firstAttribute="centerY" secondItem="fjn-va-ihi" secondAttribute="centerY" id="ElY-5J-BR5"/>
+                            <constraint firstItem="fjn-va-ihi" firstAttribute="top" secondItem="IZO-PN-HzC" secondAttribute="topMargin" id="Thd-eb-OdE"/>
+                            <constraint firstItem="fjn-va-ihi" firstAttribute="bottom" secondItem="IZO-PN-HzC" secondAttribute="bottomMargin" id="dx3-c4-Om6"/>
+                            <constraint firstItem="fjn-va-ihi" firstAttribute="leading" secondItem="IZO-PN-HzC" secondAttribute="leadingMargin" id="x4J-S1-j41"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="cal-mh-Rsz"/>
+                    <connections>
+                        <outlet property="imgEventIcon" destination="7YS-27-HMz" id="R4G-Gq-L52"/>
+                        <outlet property="lblEventName" destination="V7T-B8-O0z" id="QfJ-KM-3J9"/>
+                        <outlet property="scrollView" destination="fjn-va-ihi" id="mka-8g-VWA"/>
+                        <outlet property="txtViewKeyInfo" destination="JFo-a6-cF9" id="jc2-su-i1a"/>
+                        <outlet property="txtViewOlympicsInfo" destination="n9M-AX-9K8" id="FL2-KS-r6g"/>
+                        <outlet property="txtviewBasicsInfo" destination="kjM-C8-C1U" id="l1H-Za-Qa3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Sa-Z5-nI7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

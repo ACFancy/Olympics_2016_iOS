@@ -17,6 +17,17 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    self.imgEventIcon.image = [UIImage imageNamed:self.event.EventIcon];
+    self.lblEventName.text = self.event.EventName;
+    self.txtViewKeyInfo.text = self.event.KeyInfo;
+    self.txtviewBasicsInfo.text = self.event.BasicsInfo;
+    self.txtViewOlympicsInfo.text = self.event.OlympicInfo;
+    
+    //只有iPhone会使用ScrollView
+    self.scrollView.frame =  self.view.frame;
+    self.scrollView.contentInset = UIEdgeInsetsMake(-50, 0, 0, 0);
+    self.scrollView.contentSize = CGSizeMake(320, 900);
 }
 
 - (void)didReceiveMemoryWarning {

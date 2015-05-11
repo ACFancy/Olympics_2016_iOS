@@ -111,4 +111,14 @@ static NSString * const reuseIdentifier = @"Cell";
 }
 */
 
+#pragma mark - Prepare For Segue
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    if ([[segue identifier] isEqualToString:@"showDetail"]) {
+        NSIndexPath *indexPath = [[self.collectionView indexPathsForSelectedItems] objectAtIndex:0];
+        Events *event = [self.events objectAtIndex:(indexPath.section * COL_COUNT + indexPath.row)];
+        EventsDetailViewController *detailViewController = segue.destinationViewController;
+        detailViewController.event = event;
+    }
+}
+
 @end

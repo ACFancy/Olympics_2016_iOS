@@ -22,7 +22,6 @@
 		3DC71AE61AFC4526005A43CF /* ScheduleBLTests.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DC71AE41AFC4526005A43CF /* ScheduleBLTests.h */; };
 		3DC71AE71AFC4526005A43CF /* ScheduleBLTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DC71AE51AFC4526005A43CF /* ScheduleBLTests.m */; };
 		3DC71AE91AFC4D79005A43CF /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DC71AE81AFC4D79005A43CF /* libsqlite3.dylib */; };
-		3DC71AEA1AFC4D8C005A43CF /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DC71AE81AFC4D79005A43CF /* libsqlite3.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -59,7 +58,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3DC71AEA1AFC4D8C005A43CF /* libsqlite3.dylib in Frameworks */,
 				3D1493A41AF9AB66006E064F /* libPersistenceLayer.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -18,7 +18,6 @@
 		3D7CAB551AF8506C0020C243 /* BaseDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D7CAB541AF8506C0020C243 /* BaseDAO.m */; };
 		3D7CAB581AF863A80020C243 /* ScheduleDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D7CAB571AF863A80020C243 /* ScheduleDAO.m */; };
 		3D7CAB5E1AF864CF0020C243 /* ScheduleDAOTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D7CAB5D1AF864CF0020C243 /* ScheduleDAOTests.m */; };
-		3D7CAB601AF877510020C243 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D7CAB5F1AF877510020C243 /* libsqlite3.dylib */; };
 		3D7CAB621AF8776A0020C243 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D7CAB611AF8776A0020C243 /* Foundation.framework */; };
 		3D7CAB631AF877E00020C243 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D7CAB5F1AF877510020C243 /* libsqlite3.dylib */; };
 		3D7CAB641AF877E90020C243 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D7CAB611AF8776A0020C243 /* Foundation.framework */; };
@@ -84,7 +83,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D7CAB621AF8776A0020C243 /* Foundation.framework in Frameworks */,
-				3D7CAB601AF877510020C243 /* libsqlite3.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,9 +90,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D7CAB631AF877E00020C243 /* libsqlite3.dylib in Frameworks */,
 				3D7CAB661AF878020020C243 /* UIKit.framework in Frameworks */,
 				3D7CAB641AF877E90020C243 /* Foundation.framework in Frameworks */,
-				3D7CAB631AF877E00020C243 /* libsqlite3.dylib in Frameworks */,
 				3D3D42D51AF0B53300A2ED01 /* libPersistenceLayer.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

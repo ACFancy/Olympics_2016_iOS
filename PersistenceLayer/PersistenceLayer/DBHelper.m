@@ -12,7 +12,7 @@
 
 //获得沙箱Documents目录下的全路径
 + (NSString *)applicationDocumentsDirectoryFile:(NSString *)fileName{
-    NSString *documentDirectory = [NSSearchPathForDirectoriesInDomains(NSDocumentationDirectory, NSUserDomainMask, YES) lastObject];
+    NSString *documentDirectory = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
     NSString *path = [documentDirectory stringByAppendingPathComponent:fileName];
     return path;
 }
@@ -65,7 +65,7 @@
         sqlite3_close(db);
         NSAssert(NO, @"数据库打开失败");
     }else{
-        NSString *sql = @"Create table if not exists DBVersionInfo (version_number int);";
+        NSString *sql = @"create table if not exists DBVersionInfo ( version_number int );";
         if (sqlite3_exec(db, [sql UTF8String], NULL, NULL, NULL) != SQLITE_OK) {
             NSAssert(NO, @"创建表失败");
         }

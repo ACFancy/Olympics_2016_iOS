@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface EventsViewCell : UICollectionViewCell
-@property (strong, nonatomic) IBOutlet UIImageView *imageView;
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
 
 @end

@@ -52,7 +52,7 @@
 
     NSMutableArray *listData = [self.dao findAll];
     //断言 查询记录数为 1
-    XCTAssertTrue([listData count] == 1,@"查询记录数期望值为1 实际值为:%i",[listData count]);
+    XCTAssertTrue([listData count] == 1,@"查询记录数期望值为1 实际值为:%i",(int)[listData count]);
     
     Schedule *resSchedule = listData[0];
     //断言

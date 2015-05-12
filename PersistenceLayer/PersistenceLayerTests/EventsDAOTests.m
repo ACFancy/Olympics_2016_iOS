@@ -49,7 +49,7 @@
 - (void) test_3_FindAll{
     NSArray *list = [self.dao findAll];
     //断言 查询记录数为1
-    XCTAssertTrue([list count] == 41,@"查询记录数期望值为:42 实际值为：%i",[list count]);
+    XCTAssertTrue([list count] == 41,@"查询记录数期望值为:42 实际值为：%i",(int)[list count]);
     Events *resEvents = list[40];
     //断言
     XCTAssertEqualObjects(self.theEvents.EventName, resEvents.EventName,@"比赛项目名测试失败");

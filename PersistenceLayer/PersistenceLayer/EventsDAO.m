@@ -156,7 +156,7 @@ static EventsDAO *sharedManager = nil;
         if (sqlite3_prepare_v2(db, [sqlStr UTF8String], -1, &statement, NULL) == SQLITE_OK) {
             
             //绑定参数
-            sqlite3_bind_int(statement, 0,(int)model.EventID);
+            sqlite3_bind_int(statement, 1,(int)model.EventID);
             if (sqlite3_step(statement) == SQLITE_ROW) {
                 Events *events = [[Events alloc] init];
                 

@@ -9,12 +9,15 @@
 #import "ScheduleDAO.h"
 
 @implementation ScheduleDAO
-static ScheduleDAO *sharedManager;
+static ScheduleDAO *sharedManager = nil;
 
-+ (ScheduleDAO *)sharedManager{
-    dispatch_once_t once;
++ (ScheduleDAO*)sharedManager
+{
+    static dispatch_once_t once;
     dispatch_once(&once, ^{
+        
         sharedManager = [[super alloc] init];
+        
     });
     return sharedManager;
 }
@@ -94,7 +97,7 @@ static ScheduleDAO *sharedManager;
 - (NSMutableArray *)findAll{
     NSMutableArray *listData = [NSMutableArray array];
     if ([self openDB]) {
-      NSString *sqlStr = @"select GameDate,GameTime,GameInfo,EventID,ScheduleID from Schedule";
+      NSString *sqlStr = @"select GameDate,GameTime,GameInfo,EventID,ScheduleID FROM Schedule";
         sqlite3_stmt *statement;
         if (sqlite3_prepare_v2(db, [sqlStr UTF8String], -1, &statement, NULL) == SQLITE_OK) {
             while (sqlite3_step(statement) == SQLITE_ROW) {

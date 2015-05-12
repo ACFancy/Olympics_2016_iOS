@@ -19,7 +19,6 @@
 		3D6CB0FA1AF7224000626E56 /* create_load.sql in Resources */ = {isa = PBXBuildFile; fileRef = 3D504F391AF22CDC00EF8988 /* create_load.sql */; };
 		3D6CB0FB1AF7224200626E56 /* DBConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3D504F3A1AF22CDC00EF8988 /* DBConfig.plist */; };
 		3DA429331B018D570015ACDF /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DA429351B018D570015ACDF /* Main_iPad.storyboard */; };
-		3DA429371B0190FB0015ACDF /* libBusinessLogicLayer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DA429361B0190FB0015ACDF /* libBusinessLogicLayer.a */; };
 		3DA429411B01A4A00015ACDF /* CountDownViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DA429401B01A4A00015ACDF /* CountDownViewController.m */; };
 		3DA429441B01AE470015ACDF /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DA429431B01AE470015ACDF /* AboutViewController.m */; };
 		3DDA35731B00393800F2513C /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DDA35721B00393800F2513C /* HomeViewController.m */; };
@@ -81,6 +80,7 @@
 		3DDA36131B00581200F2513C /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3DDA36111B00581200F2513C /* README.txt */; };
 		3DDA36161B00819400F2513C /* ScheduleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DDA36151B00819400F2513C /* ScheduleViewController.m */; };
 		3DDC62D61B01C666006EDEEA /* libGoogleAdMobAds.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DDA36101B00581200F2513C /* libGoogleAdMobAds.a */; };
+		3DDC62F71B01E6AF006EDEEA /* libBusinessLogicLayer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DDC62F61B01E6AF006EDEEA /* libBusinessLogicLayer.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -188,6 +188,13 @@
 		3DDA36111B00581200F2513C /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
 		3DDA36141B00819400F2513C /* ScheduleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScheduleViewController.h; sourceTree = "<group>"; };
 		3DDA36151B00819400F2513C /* ScheduleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScheduleViewController.m; sourceTree = "<group>"; };
+		3DDC62EC1B01E625006EDEEA /* DBHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBHelper.h; sourceTree = "<group>"; };
+		3DDC62F11B01E69A006EDEEA /* BaseDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseDAO.h; sourceTree = "<group>"; };
+		3DDC62F21B01E69A006EDEEA /* Events.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Events.h; sourceTree = "<group>"; };
+		3DDC62F31B01E69A006EDEEA /* EventsDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventsDAO.h; sourceTree = "<group>"; };
+		3DDC62F41B01E69A006EDEEA /* Schedule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Schedule.h; sourceTree = "<group>"; };
+		3DDC62F51B01E69A006EDEEA /* ScheduleDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScheduleDAO.h; sourceTree = "<group>"; };
+		3DDC62F61B01E6AF006EDEEA /* libBusinessLogicLayer.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libBusinessLogicLayer.a; path = "../../Library/Developer/Xcode/DerivedData/2016Olympics-dmculkqpatoytvcscwknnmwjhzfk/Build/Products/Debug-iphoneos/libBusinessLogicLayer.a"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -195,8 +202,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DDC62F71B01E6AF006EDEEA /* libBusinessLogicLayer.a in Frameworks */,
 				3DDC62D61B01C666006EDEEA /* libGoogleAdMobAds.a in Frameworks */,
-				3DA429371B0190FB0015ACDF /* libBusinessLogicLayer.a in Frameworks */,
 				3DDA35F61B004B1000F2513C /* UIKit.framework in Frameworks */,
 				3DDA35F51B004B0A00F2513C /* AdSupport.framework in Frameworks */,
 				3DDA35F41B004B0200F2513C /* StoreKit.framework in Frameworks */,
@@ -223,6 +230,7 @@
 		3D3D430A1AF0BB3500A2ED01 = {
 			isa = PBXGroup;
 			children = (
+				3DDC62EA1B01E604006EDEEA /* Header */,
 				3DDA35F71B00581200F2513C /* GoogleAdMobAdsSdkiOS-6.6.1 */,
 				3D3D43151AF0BB3500A2ED01 /* 2016Olympics */,
 				3D504F381AF22CDC00EF8988 /* DBFile */,
@@ -360,6 +368,7 @@
 		3DDA35EA1B004A6100F2513C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3DDC62F61B01E6AF006EDEEA /* libBusinessLogicLayer.a */,
 				3DA429361B0190FB0015ACDF /* libBusinessLogicLayer.a */,
 				3DDA35E81B004A4900F2513C /* Foundation.framework */,
 				3DDA35E61B004A4200F2513C /* UIKit.framework */,
@@ -511,6 +520,19 @@
 			children = (
 			);
 			path = Search;
+			sourceTree = "<group>";
+		};
+		3DDC62EA1B01E604006EDEEA /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				3DDC62F11B01E69A006EDEEA /* BaseDAO.h */,
+				3DDC62F21B01E69A006EDEEA /* Events.h */,
+				3DDC62F31B01E69A006EDEEA /* EventsDAO.h */,
+				3DDC62F41B01E69A006EDEEA /* Schedule.h */,
+				3DDC62F51B01E69A006EDEEA /* ScheduleDAO.h */,
+				3DDC62EC1B01E625006EDEEA /* DBHelper.h */,
+			);
+			name = Header;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -806,16 +828,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = 2016Olympics/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "";
 				LIBRARY_SEARCH_PATHS = (
 					"$(SRCROOT)/GoogleAdMobAdsSdkiOS-6.6.1",
 					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/2016Olympics-dmculkqpatoytvcscwknnmwjhzfk/Build/Products/Debug-iphoneos",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "cd8d2545-47d8-4df0-9626-1d39e8a6b02f";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)/**";
+				"USER_HEADER_SEARCH_PATHS[arch=*]" = "$(BUILT_PRODUCTS_DIR)/**";
 			};
 			name = Debug;
 		};
@@ -823,14 +849,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = 2016Olympics/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "";
 				LIBRARY_SEARCH_PATHS = (
 					"$(SRCROOT)/GoogleAdMobAdsSdkiOS-6.6.1",
 					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/2016Olympics-dmculkqpatoytvcscwknnmwjhzfk/Build/Products/Debug-iphoneos",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "cd8d2545-47d8-4df0-9626-1d39e8a6b02f";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)/**";
 			};

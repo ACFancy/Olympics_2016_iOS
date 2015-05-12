@@ -21,6 +21,7 @@
                         <segue destination="n4a-RL-GQ9" kind="relationship" relationship="viewControllers" id="5Pu-cG-qon"/>
                         <segue destination="p2i-cz-iSG" kind="relationship" relationship="viewControllers" id="HWf-qH-d1X"/>
                         <segue destination="fzQ-Gg-9u1" kind="relationship" relationship="viewControllers" id="iaQ-ez-JOM"/>
+                        <segue destination="NXS-Js-ec5" kind="relationship" relationship="viewControllers" id="Lo7-F7-nge"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MU4-DH-4nn" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -243,6 +244,37 @@
             </objects>
             <point key="canvasLocation" x="1733" y="1672"/>
         </scene>
+        <!--Aoubt-->
+        <scene sceneID="2pQ-vs-3Nd">
+            <objects>
+                <viewController id="NXS-Js-ec5" customClass="AboutViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ddm-kP-VKX"/>
+                        <viewControllerLayoutGuide type="bottom" id="0fq-Cg-oQb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Rfq-Wf-slp">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="About-bg" translatesAutoresizingMaskIntoConstraints="NO" id="k99-ti-Bgv">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="k99-ti-Bgv" secondAttribute="centerY" id="19M-01-UMa"/>
+                            <constraint firstItem="k99-ti-Bgv" firstAttribute="leading" secondItem="Rfq-Wf-slp" secondAttribute="leadingMargin" constant="-16" id="YYV-IB-g3x"/>
+                            <constraint firstItem="k99-ti-Bgv" firstAttribute="bottom" secondItem="Rfq-Wf-slp" secondAttribute="bottomMargin" id="k5G-Z9-8vd"/>
+                            <constraint firstItem="k99-ti-Bgv" firstAttribute="top" secondItem="Rfq-Wf-slp" secondAttribute="topMargin" id="nb4-2o-3fS"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="k99-ti-Bgv" secondAttribute="trailing" constant="-16" id="p5f-eW-H4l"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Aoubt" image="About-TabBarIcon" id="ghc-Yx-iBo"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jrp-R3-hlZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-179" y="2476"/>
+        </scene>
         <!--CountDown-->
         <scene sceneID="wG4-xJ-fV2">
             <objects>
@@ -315,6 +347,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="About-TabBarIcon" width="30" height="30"/>
+        <image name="About-bg" width="320" height="480"/>
         <image name="CountDown-TabBarIcon" width="30" height="30"/>
         <image name="CountDown-bg" width="320" height="480"/>
         <image name="Event-TabBarIcon" width="30" height="30"/>

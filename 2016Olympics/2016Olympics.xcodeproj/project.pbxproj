@@ -21,6 +21,7 @@
 		3DA429331B018D570015ACDF /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DA429351B018D570015ACDF /* Main_iPad.storyboard */; };
 		3DA429371B0190FB0015ACDF /* libBusinessLogicLayer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DA429361B0190FB0015ACDF /* libBusinessLogicLayer.a */; };
 		3DA429411B01A4A00015ACDF /* CountDownViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DA429401B01A4A00015ACDF /* CountDownViewController.m */; };
+		3DA429441B01AE470015ACDF /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DA429431B01AE470015ACDF /* AboutViewController.m */; };
 		3DDA35731B00393800F2513C /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DDA35721B00393800F2513C /* HomeViewController.m */; };
 		3DDA35781B00424B00F2513C /* EventsViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DDA35771B00424B00F2513C /* EventsViewCell.m */; };
 		3DDA35A41B00438900F2513C /* archery.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3DDA357A1B00438900F2513C /* archery.gif */; };
@@ -112,6 +113,8 @@
 		3DA429361B0190FB0015ACDF /* libBusinessLogicLayer.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libBusinessLogicLayer.a; path = "../BusinessLogicLayer/build/Debug-iphoneos/libBusinessLogicLayer.a"; sourceTree = "<group>"; };
 		3DA4293F1B01A4A00015ACDF /* CountDownViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CountDownViewController.h; sourceTree = "<group>"; };
 		3DA429401B01A4A00015ACDF /* CountDownViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CountDownViewController.m; sourceTree = "<group>"; };
+		3DA429421B01AE470015ACDF /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
+		3DA429431B01AE470015ACDF /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
 		3DDA35711B00393800F2513C /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		3DDA35721B00393800F2513C /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		3DDA35761B00424B00F2513C /* EventsViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventsViewCell.h; sourceTree = "<group>"; };
@@ -255,6 +258,8 @@
 				3DDA36151B00819400F2513C /* ScheduleViewController.m */,
 				3DA4293F1B01A4A00015ACDF /* CountDownViewController.h */,
 				3DA429401B01A4A00015ACDF /* CountDownViewController.m */,
+				3DA429421B01AE470015ACDF /* AboutViewController.h */,
+				3DA429431B01AE470015ACDF /* AboutViewController.m */,
 				3D3D431D1AF0BB3500A2ED01 /* ViewController.h */,
 				3D3D431E1AF0BB3500A2ED01 /* ViewController.m */,
 				3DA429351B018D570015ACDF /* Main_iPad.storyboard */,
@@ -662,6 +667,7 @@
 				3DDA35781B00424B00F2513C /* EventsViewCell.m in Sources */,
 				3D3D431C1AF0BB3500A2ED01 /* AppDelegate.m in Sources */,
 				3D3D43191AF0BB3500A2ED01 /* main.m in Sources */,
+				3DA429441B01AE470015ACDF /* AboutViewController.m in Sources */,
 				3DDA35D31B00482000F2513C /* EventsDetailViewController.m in Sources */,
 				3DDA35731B00393800F2513C /* HomeViewController.m in Sources */,
 				3DDA36161B00819400F2513C /* ScheduleViewController.m in Sources */,

@@ -78,9 +78,9 @@
 		3DDA35F41B004B0200F2513C /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DDA35DA1B004A1A00F2513C /* StoreKit.framework */; };
 		3DDA35F51B004B0A00F2513C /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DDA35DE1B004A2900F2513C /* AdSupport.framework */; };
 		3DDA35F61B004B1000F2513C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DDA35E61B004A4200F2513C /* UIKit.framework */; };
-		3DDA36121B00581200F2513C /* libGoogleAdMobAds.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DDA36101B00581200F2513C /* libGoogleAdMobAds.a */; };
 		3DDA36131B00581200F2513C /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3DDA36111B00581200F2513C /* README.txt */; };
 		3DDA36161B00819400F2513C /* ScheduleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DDA36151B00819400F2513C /* ScheduleViewController.m */; };
+		3DDC62D61B01C666006EDEEA /* libGoogleAdMobAds.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DDA36101B00581200F2513C /* libGoogleAdMobAds.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -195,13 +195,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DDC62D61B01C666006EDEEA /* libGoogleAdMobAds.a in Frameworks */,
 				3DA429371B0190FB0015ACDF /* libBusinessLogicLayer.a in Frameworks */,
 				3DDA35F61B004B1000F2513C /* UIKit.framework in Frameworks */,
 				3DDA35F51B004B0A00F2513C /* AdSupport.framework in Frameworks */,
 				3DDA35F41B004B0200F2513C /* StoreKit.framework in Frameworks */,
 				3DDA35F31B004AF900F2513C /* SystemConfiguration.framework in Frameworks */,
 				3DDA35F21B004AF300F2513C /* Foundation.framework in Frameworks */,
-				3DDA36121B00581200F2513C /* libGoogleAdMobAds.a in Frameworks */,
 				3DDA35F11B004AE900F2513C /* CoreGraphics.framework in Frameworks */,
 				3DDA35EF1B004AD100F2513C /* MessageUI.framework in Frameworks */,
 				3DDA35F01B004AD900F2513C /* libsqlite3.dylib in Frameworks */,
@@ -807,11 +807,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = 2016Olympics/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "";
 				LIBRARY_SEARCH_PATHS = (
 					"$(SRCROOT)/GoogleAdMobAdsSdkiOS-6.6.1",
 					"$(inherited)",
 				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)/**";
@@ -823,11 +824,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = 2016Olympics/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "";
 				LIBRARY_SEARCH_PATHS = (
 					"$(SRCROOT)/GoogleAdMobAdsSdkiOS-6.6.1",
 					"$(inherited)",
 				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)/**";

@@ -7,7 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GADBannerView.h"
 
-@interface AboutViewController : UIViewController
+#define kSampleAdUnitID @"a14df1974738141"
+
+@interface AboutViewController : UIViewController<GADBannerViewDelegate>
+
+@property (nonatomic, strong) GADBannerView *bannerView;
+
+- (GADRequest *)createRequest;
 
 @end

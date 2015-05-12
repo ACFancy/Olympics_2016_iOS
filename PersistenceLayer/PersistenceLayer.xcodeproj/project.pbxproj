@@ -405,6 +405,7 @@
 					"/Users/ianc/Desktop/关东升/BusinessLogicLayer/build/Debug-iphoneos",
 					"$(PROJECT_DIR)",
 				);
+				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;

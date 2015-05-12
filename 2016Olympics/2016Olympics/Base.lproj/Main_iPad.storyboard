@@ -18,6 +18,7 @@
                         <segue destination="br6-04-Mdz" kind="relationship" relationship="viewControllers" id="PHX-GW-GGp"/>
                         <segue destination="WB8-sw-unA" kind="relationship" relationship="viewControllers" id="w5e-rB-bxc"/>
                         <segue destination="Uca-VY-KBo" kind="relationship" relationship="viewControllers" id="vVz-1X-kJX"/>
+                        <segue destination="YaJ-Ww-gqi" kind="relationship" relationship="viewControllers" id="glT-Ux-MRy"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YRX-SQ-bzX" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -247,8 +248,43 @@
             </objects>
             <point key="canvasLocation" x="704" y="1410"/>
         </scene>
+        <!--CountDown-->
+        <scene sceneID="jdf-VN-Qr4">
+            <objects>
+                <viewController id="YaJ-Ww-gqi" customClass="CountDownViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="CVT-cx-k1I"/>
+                        <viewControllerLayoutGuide type="bottom" id="Qxe-oD-Xks"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="EhM-QJ-8pR">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CountDown-bg" translatesAutoresizingMaskIntoConstraints="NO" id="qzo-Bw-Eed">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Ns-xO-nxY">
+                                <rect key="frame" x="176" y="264" width="400" height="100"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="127"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="CountDown" image="CountDown-TabBarIcon" id="XFZ-7p-FVN"/>
+                    <connections>
+                        <outlet property="lblCountDown" destination="1Ns-xO-nxY" id="Fdi-5r-uNL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rDu-e8-sTp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="688" y="2594"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="CountDown-TabBarIcon" width="30" height="30"/>
+        <image name="CountDown-bg" width="768" height="1024"/>
         <image name="Event-TabBarIcon" width="30" height="30"/>
         <image name="Home-TabBarIcon" width="30" height="30"/>
         <image name="Home-bg" width="768" height="1024"/>

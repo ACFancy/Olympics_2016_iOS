@@ -3,6 +3,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--Tab Bar Controller-->
@@ -19,6 +20,7 @@
                         <segue destination="yRd-7L-qda" kind="relationship" relationship="viewControllers" id="iUG-8m-YPh"/>
                         <segue destination="n4a-RL-GQ9" kind="relationship" relationship="viewControllers" id="5Pu-cG-qon"/>
                         <segue destination="p2i-cz-iSG" kind="relationship" relationship="viewControllers" id="HWf-qH-d1X"/>
+                        <segue destination="fzQ-Gg-9u1" kind="relationship" relationship="viewControllers" id="iaQ-ez-JOM"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MU4-DH-4nn" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -239,7 +241,58 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Ow-US-I95" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1297" y="1696"/>
+            <point key="canvasLocation" x="1733" y="1672"/>
+        </scene>
+        <!--CountDown-->
+        <scene sceneID="wG4-xJ-fV2">
+            <objects>
+                <viewController id="fzQ-Gg-9u1" customClass="CountDownViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Nui-mv-4Xh"/>
+                        <viewControllerLayoutGuide type="bottom" id="pbI-eM-gYe"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="PNH-wW-ibn">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CountDown-bg" translatesAutoresizingMaskIntoConstraints="NO" id="fXH-2f-uTw">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UTP-vg-fb7">
+                                <rect key="frame" x="167" y="111" width="267" height="79"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="267" id="kCe-qu-3P1"/>
+                                    <constraint firstAttribute="height" constant="79" id="uIU-Si-h9x"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="66"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="fXH-2f-uTw" firstAttribute="top" secondItem="UTP-vg-fb7" secondAttribute="bottom" constant="-206" id="3zp-t7-0Sf"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="fXH-2f-uTw" secondAttribute="trailing" constant="-16" id="6dI-yY-ih9"/>
+                            <constraint firstAttribute="centerY" secondItem="fXH-2f-uTw" secondAttribute="centerY" id="PD5-y3-BOw"/>
+                            <constraint firstAttribute="centerX" secondItem="UTP-vg-fb7" secondAttribute="centerX" id="eFZ-sU-Acz"/>
+                            <constraint firstItem="UTP-vg-fb7" firstAttribute="top" secondItem="Nui-mv-4Xh" secondAttribute="bottom" multiplier="1:5" constant="107" id="fXR-d1-oUY"/>
+                            <constraint firstItem="fXH-2f-uTw" firstAttribute="bottom" secondItem="PNH-wW-ibn" secondAttribute="bottomMargin" id="gfK-0Z-Icu"/>
+                            <constraint firstItem="fXH-2f-uTw" firstAttribute="leading" secondItem="PNH-wW-ibn" secondAttribute="leadingMargin" constant="-16" id="iLM-WZ-ikZ"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="3zp-t7-0Sf"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="CountDown" image="CountDown-TabBarIcon" id="tsb-6Q-dmz"/>
+                    <connections>
+                        <outlet property="lblCountDown" destination="UTP-vg-fb7" id="SLa-tv-ebs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d6n-WS-Jw6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="512" y="2458"/>
         </scene>
         <!--Schedule-->
         <scene sceneID="pv4-FO-Wn5">
@@ -258,10 +311,12 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dDs-rG-LU7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="433" y="1688"/>
+            <point key="canvasLocation" x="937" y="1756"/>
         </scene>
     </scenes>
     <resources>
+        <image name="CountDown-TabBarIcon" width="30" height="30"/>
+        <image name="CountDown-bg" width="320" height="480"/>
         <image name="Event-TabBarIcon" width="30" height="30"/>
         <image name="Home-TabBarIcon" width="30" height="30"/>
         <image name="Home-bg" width="320" height="480"/>

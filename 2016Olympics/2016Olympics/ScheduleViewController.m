@@ -42,6 +42,7 @@
         //对key进行排序
         self.arrayGameDateList = [keys sortedArrayUsingSelector:@selector(compare:)];
     }
+    [super viewWillAppear:animated];
 }
 
 - (void)didReceiveMemoryWarning {

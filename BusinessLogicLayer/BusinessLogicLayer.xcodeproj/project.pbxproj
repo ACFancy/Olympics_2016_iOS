@@ -14,12 +14,18 @@
 		3D1493A11AF9AAF0006E064F /* EventsBL.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DB803601AF8EFD5000208C9 /* EventsBL.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3D1493A21AF9AAF0006E064F /* ScheduleBL.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DB803621AF8EFD5000208C9 /* ScheduleBL.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3D3D42F81AF0B9DB00A2ED01 /* libBusinessLogicLayer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D3D42EC1AF0B9DB00A2ED01 /* libBusinessLogicLayer.a */; };
-		3DA4293B1B0195530015ACDF /* libPersistenceLayer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DA4293A1B0195530015ACDF /* libPersistenceLayer.a */; };
 		3DB803641AF8EFD5000208C9 /* EventsBL.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DB803611AF8EFD5000208C9 /* EventsBL.m */; };
 		3DB803651AF8EFD5000208C9 /* ScheduleBL.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DB803631AF8EFD5000208C9 /* ScheduleBL.m */; };
 		3DC71AE61AFC4526005A43CF /* ScheduleBLTests.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DC71AE41AFC4526005A43CF /* ScheduleBLTests.h */; };
 		3DC71AE71AFC4526005A43CF /* ScheduleBLTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DC71AE51AFC4526005A43CF /* ScheduleBLTests.m */; };
 		3DC71AE91AFC4D79005A43CF /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DC71AE81AFC4D79005A43CF /* libsqlite3.dylib */; };
+		3DDC62DC1B01D0DE006EDEEA /* libPersistenceLayer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DDC62DB1B01D0DE006EDEEA /* libPersistenceLayer.a */; };
+		3DDC62E31B01E4F3006EDEEA /* BaseDAO.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DDC62DE1B01E4F3006EDEEA /* BaseDAO.h */; };
+		3DDC62E41B01E4F3006EDEEA /* DBHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DDC62DF1B01E4F3006EDEEA /* DBHelper.h */; };
+		3DDC62E51B01E4F3006EDEEA /* EventsDAO.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DDC62E01B01E4F3006EDEEA /* EventsDAO.h */; };
+		3DDC62E61B01E4F3006EDEEA /* Events.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DDC62E11B01E4F3006EDEEA /* Events.h */; };
+		3DDC62E71B01E4F3006EDEEA /* Schedule.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DDC62E21B01E4F3006EDEEA /* Schedule.h */; };
+		3DDC62E91B01E50D006EDEEA /* ScheduleDAO.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DDC62E81B01E50D006EDEEA /* ScheduleDAO.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -41,7 +47,6 @@
 		3D3D42EC1AF0B9DB00A2ED01 /* libBusinessLogicLayer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libBusinessLogicLayer.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D3D42F71AF0B9DB00A2ED01 /* BusinessLogicLayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BusinessLogicLayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D3D42FD1AF0B9DB00A2ED01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3DA4293A1B0195530015ACDF /* libPersistenceLayer.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPersistenceLayer.a; path = "../PersistenceLayer/build/Debug-iphoneos/libPersistenceLayer.a"; sourceTree = "<group>"; };
 		3DA4293D1B0196B40015ACDF /* create_load.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = create_load.sql; sourceTree = "<group>"; };
 		3DA4293E1B0196B40015ACDF /* DBConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DBConfig.plist; sourceTree = "<group>"; };
 		3DB803601AF8EFD5000208C9 /* EventsBL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventsBL.h; sourceTree = "<group>"; };
@@ -51,6 +56,13 @@
 		3DC71AE41AFC4526005A43CF /* ScheduleBLTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScheduleBLTests.h; sourceTree = "<group>"; };
 		3DC71AE51AFC4526005A43CF /* ScheduleBLTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScheduleBLTests.m; sourceTree = "<group>"; };
 		3DC71AE81AFC4D79005A43CF /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		3DDC62DB1B01D0DE006EDEEA /* libPersistenceLayer.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPersistenceLayer.a; path = "../../Library/Developer/Xcode/DerivedData/2016Olympics-dmculkqpatoytvcscwknnmwjhzfk/Build/Products/Release-iphoneos/libPersistenceLayer.a"; sourceTree = "<group>"; };
+		3DDC62DE1B01E4F3006EDEEA /* BaseDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseDAO.h; sourceTree = "<group>"; };
+		3DDC62DF1B01E4F3006EDEEA /* DBHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBHelper.h; sourceTree = "<group>"; };
+		3DDC62E01B01E4F3006EDEEA /* EventsDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventsDAO.h; sourceTree = "<group>"; };
+		3DDC62E11B01E4F3006EDEEA /* Events.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Events.h; sourceTree = "<group>"; };
+		3DDC62E21B01E4F3006EDEEA /* Schedule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Schedule.h; sourceTree = "<group>"; };
+		3DDC62E81B01E50D006EDEEA /* ScheduleDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScheduleDAO.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3DA4293B1B0195530015ACDF /* libPersistenceLayer.a in Frameworks */,
+				3DDC62DC1B01D0DE006EDEEA /* libPersistenceLayer.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,8 +89,9 @@
 		3D3D42E31AF0B9DB00A2ED01 = {
 			isa = PBXGroup;
 			children = (
+				3DDC62DD1B01E4CA006EDEEA /* Headers */,
+				3DDC62DB1B01D0DE006EDEEA /* libPersistenceLayer.a */,
 				3DA4293C1B0196B40015ACDF /* DBFile */,
-				3DA4293A1B0195530015ACDF /* libPersistenceLayer.a */,
 				3DC71AE81AFC4D79005A43CF /* libsqlite3.dylib */,
 				3D3D42EE1AF0B9DB00A2ED01 /* BusinessLogicLayer */,
 				3D3D42FB1AF0B9DB00A2ED01 /* BusinessLogicLayerTests */,
@@ -135,6 +148,19 @@
 			path = DBFile;
 			sourceTree = "<group>";
 		};
+		3DDC62DD1B01E4CA006EDEEA /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				3DDC62E81B01E50D006EDEEA /* ScheduleDAO.h */,
+				3DDC62DE1B01E4F3006EDEEA /* BaseDAO.h */,
+				3DDC62DF1B01E4F3006EDEEA /* DBHelper.h */,
+				3DDC62E01B01E4F3006EDEEA /* EventsDAO.h */,
+				3DDC62E11B01E4F3006EDEEA /* Events.h */,
+				3DDC62E21B01E4F3006EDEEA /* Schedule.h */,
+			);
+			name = Headers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -143,7 +169,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D1493921AF9A20E006E064F /* EventsBL.h in Headers */,
+				3DDC62E71B01E4F3006EDEEA /* Schedule.h in Headers */,
+				3DDC62E31B01E4F3006EDEEA /* BaseDAO.h in Headers */,
+				3DDC62E41B01E4F3006EDEEA /* DBHelper.h in Headers */,
+				3DDC62E91B01E50D006EDEEA /* ScheduleDAO.h in Headers */,
+				3DDC62E51B01E4F3006EDEEA /* EventsDAO.h in Headers */,
 				3D1493931AF9A20E006E064F /* ScheduleBL.h in Headers */,
+				3DDC62E61B01E4F3006EDEEA /* Events.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,11 +379,11 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
-				LIBRARY_SEARCH_PATHS = "";
+				LIBRARY_SEARCH_PATHS = "$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/2016Olympics-dmculkqpatoytvcscwknnmwjhzfk/Build/Products/Release-iphoneos";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				USER_HEADER_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)/**";
+				USER_HEADER_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)/libOersistenceLayer.a $(BUILT_PRODUCTS_DIR)/**";
 			};
 			name = Debug;
 		};
@@ -360,11 +392,12 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
-				LIBRARY_SEARCH_PATHS = "";
+				LIBRARY_SEARCH_PATHS = "$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/2016Olympics-dmculkqpatoytvcscwknnmwjhzfk/Build/Products/Release-iphoneos";
+				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				USER_HEADER_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)/**";
+				USER_HEADER_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)/libOersistenceLayer.a $(BUILT_PRODUCTS_DIR)/**";
 			};
 			name = Release;
 		};
